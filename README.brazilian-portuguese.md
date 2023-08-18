@@ -9,52 +9,212 @@
 <br/>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/⚙%20Contagem%20de%20Items%20-%2083%20Boas%20Práticas-blue.svg" alt="83 items"/> <img src="https://img.shields.io/badge/%F0%9F%93%85%20Última%20Atualização%20-%20Jun%205%202019-green.svg" alt="Última Atualização: June 5, 2019"/> <img src="https://img.shields.io/badge/%E2%9C%94%20Atualizado%20Para%20Versão%20-%20Node%2012.4.0%20LTS-brightgreen.svg" alt="Atualizado para Node 12.4.0 LTS"/>
+  <img src="https://img.shields.io/badge/⚙%20Item%20count%20-%20102%20Best%20Practices-blue.svg" alt="102 items"/> <img id="last-update-badge" src="https://img.shields.io/badge/%F0%9F%93%85%20Last%20update%20-%20July%2019%2C%202023-green.svg" alt="Última atualização: 19 de julho, 2023" /> <img src="https://img.shields.io/badge/ %E2%9C%94%20Updated%20For%20Version%20-%20Node%2019.0.0-brightgreen.svg" alt="Atualizado para Node 19.0.0"/>
 </div>
 
 <br/>
 
-[![nodepractices](./assets/images/twitter-s.png)](https://twitter.com/nodepractices/) **Siga-nos no Twitter!** [**@nodepractices**](https://twitter.com/nodepractices/)
+[<img src="assets/images/twitter.svg" width="16" height="16" alt="" />](https://twitter.com/nodepractices/) **Siga-nos no Twitter!** [**@nodepractices**](https://twitter.com/nodepractices/)
 
 <br/>
 
-Leia em diferentes idiomas: [![CN](./assets/flags/CN.png)**CN**](./README.chinese.md), [![BR](./assets/flags/BR.png)**BR**](./README.brazilian-portuguese.md), [![RU](./assets/flags/RU.png)**RU**](./README.russian.md), [![PL](./assets/flags/PL.png)**PL**](./README.polish.md), [![JA](./assets/flags/JA.png)**JA**](./README.japanese.md), [![EU](./assets/flags/EU.png)**EU**](./README.basque.md) [(![ES](./assets/flags/ES.png)**ES**, ![FR](./assets/flags/FR.png)**FR**, ![HE](./assets/flags/HE.png)**HE**, ![KR](./assets/flags/KR.png)**KR** and ![TR](./assets/flags/TR.png)**TR** em progresso! )](#translations)
+Leia em diferentes idiomas: [![CN](./assets/flags/CN.png)**CN**](./README.chinese.md), [![FR](./assets/flags/FR.png)**FR**](./README.french.md), [![BR](./assets/flags/BR.png)**BR**](./README.brazilian-portuguese.md), [![RU](./assets/flags/RU.png)**RU**](./README.russian.md), [![PL](./assets/flags/PL.png)**PL**](./README.polish.md), [![JA](./assets/flags/JA.png)**JA**](./README.japanese.md), [![EU](./assets/flags/EU.png)**EU**](./README.basque.md) [(![ES](./assets/flags/ES.png)**ES**, ![HE](./assets/flags/HE.png)**HE**, ![KR](./assets/flags/KR.png)**KR** e ![TR](./assets/flags/TR.png)**TR** em progresso! )](#translations)
 
 <br/>
 
-###### Construído e mantido pelo nosso [Comitê Diretivo](#comitê-diretivo) e [Colaboradores](#colaboradores)
+# 🎊 A edição 2023 edition está aqui!
 
-# Novas Práticas e Notícias
+- **🛰 Modernizado para 2023**: Várias revisões de texto, novas bibliotecas recomendadas, e algumas novas boas práticas
 
-- **Nova Boa Prática:** 4.4: [Evite dados fixos e sementes para teste, adicione os dados no teste](#4-práticas-de-testes-e-qualidade-geral)
+- **✨ Foque facilmente no novo conteúdo**: Já visitou anteriormente? Procure pelas etiquetas `#new` ou `#updated` para apenas novos conteúdos
 
-- **Nova Boa Prática:** 6.25: [Evite publicar segredos no registro do npm](./sections/security/avoid_publishing_secrets.brazilian-portuguese.md)
-
-- **Nova tradução:** ![BR](./assets/flags/BR.png) [Português Brasileiro](./README.brazilian-portuguese.md) disponível agora, cortesia de [Marcelo Melo](https://github.com/marcelosdm)! ❤️
-
-- **🎊 60,000 estrelas!**: Nosso repo recebeu estrela e a confiança de 60.100 desenvolvedores. Estamos sem palavras
+- **🔖 Curioso para ver novos exemplos? Temos um projeto inicial**: Visite [Practica.js](https://github.com/practicajs/practica), nosso exemplo de aplicação e _boilerplate_ (beta) para ver algumas práticas em ação
 
 <br/><br/>
 
 # Bem-vindo! 3 Coisas Que Você Precisa Saber
 
-**1. Quando você lê aqui, na verdade você lê alguns dos melhores artigos de Node.js -** este é um resumo e curadoria dos mais bem ranqueados conteúdos sobre as melhores práticas do Node.js.
+**1. Você está lendo dezenas dentre os melhores artigos sobre Node.js -** este repositório é um resumo e curadoria do conteúdo mais bem ranqueado sobre as melhores práticas em Node.js, bem como conteúdo escrito aqui por colaboradores
 
-**2. Esta é a maior coletânea, e está crescendo mais a cada semana -** atualmente, são apresentadas mais de 80 melhores práticas, guias de estilo e dicas de arquitetura. Novas issues e PR são criadas diariamente para manter este livro vivo atualizado. Gostaríamos muito de ver você contribuindo aqui, seja corrigindo algum erro de código ou sugerindo novas e brilhantes ideias. Veja nossas [conquistas aqui](https://github.com/goldbergyoni/nodebestpractices/milestones?direction=asc&sort=due_date&state=open).
+**2. Esta é a maior coletânea, e está crescendo mais a cada semana -** atualmente, são apresentadas mais de 80 melhores práticas, guias de estilo e dicas de arquitetura. Novas _issues_ e _pull requests_ são criadas diariamente para manter este livro vivo atualizado. Gostaríamos muito de ver você contribuindo aqui, seja corrigindo algum erro de código ou sugerindo novas ideias brilhantes. Veja nossas [diretrizes de escrita aqui](./.operations/writing-guidelines.md)
 
-**3. A maioria dos tópicos possuem informações adicionais -** perto dos tópicos das melhores práticas, você encontrará o link **🔗Leia Mais** que irá apresentar exemplos de códigos, citações de blogs selecionados e mais informações.
+**3. A maioria dos tópicos possuem informações adicionais -** a maioria dos tópicos incluem um link **🔗Leia Mais** que irá expandir sobre as práticas com exemplos de códigos, citações de blogs selecionados, e mais informações.
 
 <br/><br/>
 
 ## Índice
 
-1. [Práticas de Estrutura de Projeto (5)](#1-práticas-de-estrutura-de-projeto)
-2. [Práticas de Tratamento de Erros (12) ](#2-práticas-de-tratamento-de-erros)
-3. [Práticas de Estilo de Código (13) ](#3-práticas-de-estilo-de-código)
-4. [Práticas de Testes e Qualidade Geral (13) ](#4-práticas-de-testes-e-qualidade-geral)
-5. [Práticas de Produção (19) ](#5-boas-práticas-de-produção)
-6. [Práticas de Segurança (25)](#6-boas-práticas-em-segurança)
-7. [Práticas de Performance (1) (Em Progresso ✍️)](#7-boas-práticas-em-performance)
+<details>
+  <summary>
+    <a href="#1-praticas-de-arquitetura-de-projeto">1. Práticas de Arquitetura de Projeto (6)</a>
+  </summary>
+
+&emsp;&emsp;[1.1 Estruture sua solução por componentes `#strategic` `#updated`](#-11-estruture-suas-solucoes-por-componentes)</br>
+&emsp;&emsp;[1.2 Estratifique seus componentes em três camadas, mantenha a camada web dentro de seus limites `#strategic` `#updated`](#-12-estratifique-seus-componentes-em-tres-camadas-mantenha-a-camada-web-dentro-de-seus-limites)</br>
+&emsp;&emsp;[1.3 Envolva os utilitários comuns em pacotes, considere publicá-los](#-13-envolva-os-utilitarios-comuns-em-pacotes-considere-publicalos)</br>
+&emsp;&emsp;[1.4 Use configurações hierárquicas, seguras e sensíveis aos seus ambientes `#updated`](#-14-use-configuracoes-hierarquicas-seguras-e-sensiveis-aos-seus-ambientes)</br>
+&emsp;&emsp;[1.5 Considere todas as consequências ao escolher o framework principal `#new`](#-15-considere-todas-as-consequencias-ao-escolher-o-framework-principal)</br>
+&emsp;&emsp;[1.6 Use TypeScript espaçadamente e conscientemente `#new`](#-16-use-typescript-espaçadamente-e-conscientemente)</br>
+
+</details>
+
+<details>
+  <summary>
+    <a href="#2-praticas-de-tratamento-de-erros">2. Práticas de Tratamento de Erros (12)</a>
+  </summary>
+
+&emsp;&emsp;[2.1 Use Async-Await ou promises para tratamento de erros assíncronos](#-21-use-asyncawait-ou-promises-para-tratamento-de-erros-assincronos)</br>
+&emsp;&emsp;[2.2 Extenda o objeto de Erro nativo `#strategic` `#updated`](#-22-extenda-o-objecto-de-erro-nativo)</br>
+&emsp;&emsp;[2.3 Diferencie erros operacionais e erros de programação `#strategic` `#updated`](#-23-diferencie-erros-operacionais-e-erros-de-programacao)</br>
+&emsp;&emsp;[2.4 Trate erros de forma centralizada, não dentro de um middleware `#strategic`](#-24-trate-erros-de-forma-centralizada-nao-dentro-de-um-middleware)</br>
+&emsp;&emsp;[2.5 Documente erros de API usando a OpenAPI ou o GraphQL](#-25-documente-errors-de-api-usando-a-openapi-ou-o-graphql)</br>
+&emsp;&emsp;[2.6 Finalize o processo quando um estranho aparecer `#strategic`](#-26-finalize-o-processo-quando-um-estranho-aparecer)</br>
+&emsp;&emsp;[2.7 Use um agente de log maduro para aumentar a visibilidade de erros `#updated`](#-27-use-i,-agente-de-log-maduro-para-aumentar-a-visibilidade-de-erros)</br>
+&emsp;&emsp;[2.8 Teste os fluxos de erro com o seu framework de teste favorito `#updated`](#-28-test-error-flows-using-your-favorite-test-framework)</br>
+&emsp;&emsp;[2.9 Descubra erros e downtime usando produtos APM](#-29-descubra-erros-e-downtime-usando-produtos-apm)</br>
+&emsp;&emsp;[2.10 Capture rejeições de promises não tratadas `#updated`](#-210-capture-rejeicoes-de-promises-nao-tratadas)</br>
+&emsp;&emsp;[2.11 Falhe rápido, valide argumentos usando uma biblioteca dedicada](#-211-falhe-rápido-valide-argumentos-usando-uma-biblioteca-dedicada)</br>
+&emsp;&emsp;[2.12 Sempre use 'await' ao retornar promises para evitar um rastreamento parcial da pilha de erro `#new`](#-212-sempre-use-await-ao-retornar-promises-para-evitar-um-rastreamento-parcial-da-pilha-de-erro)</br>
+&emsp;&emsp;[2.13 Inscreva-se aos eventos de erro de emissores de eventos `#new`](#-213-inscrevase-aos-eventos-de-erro-de-emissores-de-eventos)</br>
+
+</details>
+
+<details>
+  <summary>
+    <a href="#3-praticas-de-estilo-de-codigo">3. Práticas de Estilo de Código (12)</a>
+  </summary>
+
+&emsp;&emsp;[3.1 Use ESLint `#strategic`](#-31-use-eslint)</br>
+&emsp;&emsp;[3.2 Use as extensões de eslint do Node.js `#updated`](#-32-use-as-extensoes-de-eslint-do-nodejs)</br>
+&emsp;&emsp;[3.3 Abra as chaves de um bloco de código na mesma linha](#-33-abra-as-chaves-de-um-bloco-de-codigo-na-mesma-linha)</br>
+&emsp;&emsp;[3.4 Separe suas declarações corretamente](#-34-separe-suas-declaracoes-corretamente)</br>
+&emsp;&emsp;[3.5 Nomeie suas funções](#-35-nomeie-suas-funcoes)</br>
+&emsp;&emsp;[3.6 Use convenções de nomenclatura para variáveis, constantes, funções e classes](#-36-use-convencoes-de-nomenclatura-para-variaveis-constantes-funcoes-e-classes)</br>
+&emsp;&emsp;[3.7 Prefira const ao let. Esqueça o var](#-37-prefira-const-ao-let-esqueca-o-var)</br>
+&emsp;&emsp;[3.8 Importe módulos primeiro, não dentro de funções](#-38-importe-modulos-primeiro-nao-dentro-de-funcoes)</br>
+&emsp;&emsp;[3.9 Defina um ponto de entrada explícito para um módulo/pasta `#updated`](#-39-defina-um-ponto-de-entrada-explicito-para-um-modulopasta)</br>
+&emsp;&emsp;[3.10 Use o operador ===](#-310-use-o-operador-)</br>
+&emsp;&emsp;[3.11 Use Async Await, evite callbacks `#strategic`](#-311-use-async-await-evite-callbacks)</br>
+&emsp;&emsp;[3.12 Use expressões _arrow functions_ (=>)](#-312-use-expressoes-arrow-functions-)</br>
+&emsp;&emsp;[3.13 Evite efeitos fora de funções `#new`](#-313-evite-efeitos-fora-de-funcoes)</br>
+
+</details>
+
+<details>
+  <summary>
+    <a href="#4-praticas-de-testes-e-qualidade-geral">4. Práticas de Testes e Qualidade Geral (13)</a>
+  </summary>
+
+&emsp;&emsp;[4.1 No mínimo, escreva testes de API (componente) `#strategic`](#-41-no-minimo-escreva-testes-de-api-componente)</br>
+&emsp;&emsp;[4.2 Inclua 3 partes em cada nome de teste `#new`](#-42-inclua-3-partes-em-cada-nome-de-teste)</br>
+&emsp;&emsp;[4.3 Estuture testes a partir do padrão AAA `#strategic`](#-43-estruture-testes-a-partir-do-padrao-aaa)</br>
+&emsp;&emsp;[4.4 Garanta que a versão Node esteja unificada `#new`](#-44-garanta-que-a-versao-node-esteja-unificada)</br>
+&emsp;&emsp;[4.5 Evite dados fixos e seeds em testes, adicione dados a cada teste `#strategic`](#-45-evite-dados-fixos-e-seeds-em-testes-adicione-dados-a-cada-teste)</br>
+&emsp;&emsp;[4.6 Rotule seus testes `#advanced`](#-46-rotule-seus-testes)</br>
+&emsp;&emsp;[4.7 Verifique suas coberturas de testes, isso te ajuda a identificar padrões incorretos de teste](#-47-verifique-suas-coberturas-de-testes-isso-te-ajuda-a-identificar-padroes-incorretos-de-testes)</br>
+&emsp;&emsp;[4.8 Use ambientes à nível de produção para testes e2e ](#-48-use-ambientes-a-nivel-de-producao-para-testes-e2e)</br>
+&emsp;&emsp;[4.9 Refatore regularmente usando ferramentas de análise estática](#-49-refatore-regularmente-usando-ferramentas-de-analise-estatica)</br>
+&emsp;&emsp;[4.10 Simule respostas de serviços HTTP externos `#new` `#advanced`](#-410-simule-respostas-de-servicos-http-externos)</br>
+&emsp;&emsp;[4.11 Teste seus 'middlewares' isoladamente](#-411-teste-seus-middlewares-isoladamente)</br>
+&emsp;&emsp;[4.12 Especifique uma porta em produção, randomize em testes `#new`](#-412-especifique-uma-porta-em-producao-randomize-em-testes)</br>
+&emsp;&emsp;[4.13 Teste os cinco resultados possíveis `#strategic` `#new`](#-413-teste-os-cinco-resultados-possiveis)</br>
+
+</details>
+
+<details>
+  <summary>
+    <a href="#5-praticas-ao-escalar-para-producao">5. Práticas ao escalar para Produção (19)</a>
+  </summary>
+
+&emsp;&emsp;[5.1. Monitoramento `#strategic`](#-51-monitoramento)</br>
+&emsp;&emsp;[5.2. Aumente a observabilidade usando smart logging `#strategic`](#-52-aumente-a-observabilidade-usando-smart-logging)</br>
+&emsp;&emsp;[5.3. Delegue tudo o que for possível (ex.: gzip, SSL) a um proxy reverso `#strategic`](#-53-delegue-tudo-o-quer-for-possivel-ex-gzip-ssl-a-um-proxy-reverso)</br>
+&emsp;&emsp;[5.4. Bloqueie as dependências](#-54-bloqueie-as-dependencias)</br>
+&emsp;&emsp;[5.5. Poupe tempo de atividade do processo usando a ferramenta certa](#-55-poupe-tempo-de-atividade-do-processo-usando-a-ferramenta-certa)</br>
+&emsp;&emsp;[5.6. Utilize todos os núcleos do processador](#-56-utilize-todos-os-núcleos-do-processador)</br>
+&emsp;&emsp;[5.7. Crie um ‘endpoint de manutenção’](#-57-crie-um-endpoint-de-manutencao)</br>
+&emsp;&emsp;[5.8. Descubra o que está oculto usando produtos APM `#advanced` `#updated`](#-58-descubra-o-que-esta-oculto-usando-produtos-apm)</br>
+&emsp;&emsp;[5.9. Deixe seu código pronto para produção](#-59-deixe-seu-codigo-pronto-para-producao)</br>
+&emsp;&emsp;[5.10. Meça e proteja o uso de memória `#advanced`](#-510-meca-e-proteja-o-uso-de-memoria)</br>
+&emsp;&emsp;[5.11. Deixe seus recursos de frontend fora do Node](#-511-deixe-seus-recursos-de-frontend-fora-do-node)</br>
+&emsp;&emsp;[5.12. Aspire a ser stateless `#strategic`](#-512-aspire-a-ser-stateless)</br>
+&emsp;&emsp;[5.13. Utilize ferramentas que detectam vulnerabilidades automaticamente](#-513-utilize-ferramentas-que-detectam-vulnerabilidades-automaticamente)</br>
+&emsp;&emsp;[5.14. Atribua 'transaction-id's para cada declaração de log `#advanced`](#-514-atribua-transaction-ids-para-cada-declaracao-de-log)</br>
+&emsp;&emsp;[5.15. Defina NODE_ENV=production](#-515-defina-node_envproduction)</br>
+&emsp;&emsp;[5.16. Projete deploys automáticos, atômicos e com tempo de inatividade zero `#advanced`](#-516-projete-deploys-automáticos-atômicos-e-com-tempo-de-inatividade-zero)</br>
+&emsp;&emsp;[5.17. Use uma versão LTS do Node.js](#-517-use-uma-versao-lts-do-nodejs)</br>
+&emsp;&emsp;[5.18. Direcione logs para o stdout, evite direcioná-los para dentro do aplicativo `#updated`](#-518-direcione-logs-para-o-stdout-evite-direcionalos-para-dentro-do-aplicativo)</br>
+&emsp;&emsp;[5.19. Instale seus pacotes com npm ci `#new`](#-519-instalce-seus-pacotes-com-npm-ci)</br>
+
+</details>
+
+<details>
+  <summary>
+    <a href="#6-praticas-de-seguranca">6. Práticas de Seguraça (25)</a>
+  </summary>
+
+&emsp;&emsp;[6.1. Adote as regras de segurança do linter](#-61-adote-as-regras-de-segurança-do-linter)</br>
+&emsp;&emsp;[6.2. Limite requisições simultâneas usando um middleware](#-62-limite-requisicoes-simultaneas-usando-um-middleware)</br>
+&emsp;&emsp;[6.3. Extraia segredos dos arquivos de configuração ou use pacotes para criptografá-los `#strategic`](#-63-extraia-segredos-dos-arquivos-de-configuracao-ou-use-pacotes-para-criptografalos)</br>
+&emsp;&emsp;[6.4. Previna-se contra vulnerabilidades de query injection com bibliotecas ORM/ODM `#strategic`](#-64-previnase-contra-vulnerabilidades-de-query-injection-com-bibliotecas-ormodm)</br>
+&emsp;&emsp;[6.5. Coleção genérica de boas práticas de segurança](#-65-colecao-generica-de-boas-praticas-de-seguranca)</br>
+&emsp;&emsp;[6.6. Ajuste os headers de resposta HTTP para uma segurança aprimorada](#-66-ajuste-os-headers-de-resposta-http-para-uma-seguranca-aprimorada)</br>
+&emsp;&emsp;[6.7. Inspecione constante e automaticamente por dependências vulneráveis `#strategic`](#-67-inspecione-constante-e-automaticamente-por-dependencias-vulneraveis)</br>
+&emsp;&emsp;[6.8. Proteja Senhas e Segredos de Usuários com bcrypt ou scrypt `#strategic`](#-68-proteja-senhas-e-segredos-de-usuarios-com-bcrypt-ou-scrypt)</br>
+&emsp;&emsp;[6.9. Escape saídas HTML, JS e CSS](#-69-escape-saidas-html-js-and-css)</br>
+&emsp;&emsp;[6.10. Valide os esquemas de entrada JSON `#strategic`](#-610-valide-os-esquemas-de-entrada-json)</br>
+&emsp;&emsp;[6.11. Ajude a inserir JWTs em listas de restrição](#-611-ajude-a-inserir-jwts-em-listaas-de-restricao)</br>
+&emsp;&emsp;[6.12. Previna-se de ataques de força bruta contra autorização `#advanced`](#-612-previnase-de-ataques-de-forca-bruta-contra-autorizacao)</br>
+&emsp;&emsp;[6.13. Execute o Node.js como um usuário não-root](#-613-execute-o-nodejs-como-um-usuario-naoroot)</br>
+&emsp;&emsp;[6.14. Limite o tamanho do payload usando um proxy reverso ou um middleware](#-614-limite-o-tamanho-do-payload-usando-um-proxy-reverso-ou-um-middleware)</br>
+&emsp;&emsp;[6.15. Evite instruções eval do JavaScript](#-615-evite-instrucoes-eval-do-javascript)</br>
+&emsp;&emsp;[6.16. Evite que RegEx maliciosos sobrecarreguem sua execução de thread único](#-616-evite-que-regex-maliciosos-sobrecarreguem-sua-execucao-de-thread-unico)</br>
+&emsp;&emsp;[6.17. Evite o carregamento de módulos usando uma variável](#-617-evite-o-carregamento-de-modulos-usando-uma-variavel)</br>
+&emsp;&emsp;[6.18. Execute códigos não seguros em uma sandbox](#-618-execute-codigos-nao-seguros-em-uma-sandbox)</br>
+&emsp;&emsp;[6.19. Tome cuidado extra ao trabalhar com processos filhos `#advanced`](#-619-take-extra-care-when-working-with-child-processes)</br>
+&emsp;&emsp;[6.20. Oculte detalhes de erros dos usuários](#-620-hide-error-details-from-clients)</br>
+&emsp;&emsp;[6.21. Configure 2FA para o npm ou Yarn `#strategic`](#-621-configure-2fa-for-npm-or-yarn)</br>
+&emsp;&emsp;[6.22. Modifique as configurações do middleware de sessão](#-622-modify-session-middleware-settings)</br>
+&emsp;&emsp;[6.23. Evite ataques do DOS definindo explicitamente quando um processo deve falhar `#advanced`](#-623-avoid-dos-attacks-by-explicitly-setting-when-a-process-should-crash)</br>
+&emsp;&emsp;[6.24. Impeça redirecionamentos não seguros](#-624-prevent-unsafe-redirects)</br>
+&emsp;&emsp;[6.25. Evite publicar segredos no registro do npm](#-625-avoid-publishing-secrets-to-the-npm-registry)</br>
+&emsp;&emsp;[6.26. Inspecione por pacotes defasados](#-626-inspecione-por-pacotes-defasados)</br>
+&emsp;&emsp;[6.27. Importe módulos nativos usando o protocolo 'node:' `#new`](#-627-importe-modulos-nativos-usando-o-protocolo-node)</br>
+
+</details>
+
+<details>
+  <summary>
+    <a href="#7-praticas-de-performance">7. Práticas de Performance (2) (Work In Progress️ ✍️)</a>
+  </summary>
+
+&emsp;&emsp;[7.1. Não bloqueie o Event Loop](#-71-nao-bloqueie-o-event-loop)</br>
+&emsp;&emsp;[7.2. Prefira métodos JS nativos ao invés de utilitários de usuário, como o Lodash](#-72-prefire-metodos-js-nativos-ao-inves-de-utilitarios-de-usuoario-como-o-lodash)</br>
+
+</details>
+
+<details>
+  <summary>
+    <a href="#8-praticas-em-docker">8. Práticas em Docker (15)</a>
+  </summary>
+
+&emsp;&emsp;[8.1 Use builds de estágios múltiplos para imagens Docker mais compactas e seguras `#strategic`](#-81-use-builds-de-multiplos-estagios-para-imagens-docker-mais-compactas-e-seguras)</br>
+&emsp;&emsp;[8.2. Inicialize usando comandos node, evite npm start](#-82-inicialize-usando-comandos-node-evite-npm-start)</br>
+&emsp;&emsp;[8.3. Deixe que o momento de execução do Docker lide com replicações e o tempo de atividade `#strategic`](#-83-dexe-que-o-momento-de-execucao-do-docker-life-com-replicacoes-e-o-tempo-de-atividade)</br>
+&emsp;&emsp;[8.4. Use .dockerignore para prevenir segredos vazados](#-84-use-dockerignore-para-prevenir-segredos-vazados)</br>
+&emsp;&emsp;[8.5. Despolua as dependências antes de subir para produção](#-85-despolua-as-dependencias-antes-de-subir-para-producao)</br>
+&emsp;&emsp;[8.6. Encerre a execução de forma inteligente e segura `#advanced`](#-86-encerre-a-execucao-de-forma-inteligente-e-segura)</br>
+&emsp;&emsp;[8.7. Defina limites de memória usando ambos Docker e a v8 `#advanced` `#strategic`](#-87-defina-limites-de-memoria-usando-ambos-docker-e-a-v8)</br>
+&emsp;&emsp;[8.8. Planeje-se para um uso eficiente de cache](#-88-planejese-para-um-uso-eficiente-de-cache)</br>
+&emsp;&emsp;[8.9. Use etiquetas de imagem explícitas, evite a etiqueta latest](#-89-use-etiquetas-de-imagem-eplicitas-evite-a-etiqueta-latest)</br>
+&emsp;&emsp;[8.10. Prefira imagens Docker base menores](#-810-prefira-imagens-docker-base-menores)</br>
+&emsp;&emsp;[8.11. Limpe os segredos de tempo de compilação, evite segredos em args `#strategic` `#new`](#-811-limpe-os-segredos-de-tempo-de-compilacao-evite-segredos-em-args)</br>
+&emsp;&emsp;[8.12. Escaneie imagens por camadas múltiplas de vulnerabilidades `#advanced`](#-812-escaneie-imagens-por-camadas-multiplas-de-vulnerabilidades)</br>
+&emsp;&emsp;[8.13 Despolua o cache NODE_MODULE](#-813-despolua-o-cache-node_module)</br>
+&emsp;&emsp;[8.14. Práticas genéricas em Docker](#-814-praticas-genericas-em-docker)</br>
+&emsp;&emsp;[8.15. Despolua seu Dockerfile `#new`](#-815-despolua-seu-dockerfile)</br>
+
+</details>
 
 <br/><br/>
 
@@ -62,51 +222,103 @@ Leia em diferentes idiomas: [![CN](./assets/flags/CN.png)**CN**](./README.chines
 
 ## ![✔] 1.1 Estruture sua solução por componentes
 
-**TL;DR:** A pior armadilha das grandes aplicações é manter uma enorme base de código com centenas de dependências - tal qual as monolíticas, que diminuem a velocidade dos desenvolvedores conforme eles tentam incorporar novos recursos. Em vez disso, particione seu código em componentes, cada um com sua própria pasta ou uma base de código dedicada, e garanta que cada unidade seja mantida pequena e simples. Veja o link ‘Leia Mais’ abaixo, para ver exemplos de estrutura correta de projeto.
+### `📝 #updated`
 
-**Caso contrário:** Quando desenvolvendo novos recursos, desenvolvedores têm dificuldade para perceber o impacto de suas modificações e temem estragar outros componentes dependentes - deploys se tornam mais lentos e arriscados. Também é considerado mais difícil de escalar quando nenhuma unidade de negócio está separada.
+**TL;DR:** A raíz de um sistema deve conter pastas ou repositórios que representem módulos de negócios de porte razoável. Cada componente representa uma esfera do produt (ex.: contextos limitados), como 'user-component', 'order-component', etc. CXada componente possui sua própria API, lógica, e banco de dados lógico, Qual a vantagem significativa? Com um componente autônomo, cada mudança é realizada através de escopos menores e mais ganulares — a sobrecarga mental, fricção de desenvolvimento, e o temor por deploys são bem menores e melhores. Por conseguência, desenvolvedores podem trabalhar bem mais rápido. Isso não necessariamente demanda separação física e pode ser alcançado usando um Monorepo ou com uma estrutura de repositórios múltiplos.
+
+```bash
+my-system
+├─ apps (components)
+│  ├─ orders
+│  ├─ users
+│  ├─ payments
+├─ libraries (generic cross-component functionality)
+│  ├─ logger
+│  ├─ authenticator
+```
+
+**Caso contrário:** quando artefatos de vários módulos/tópicos são embaralhados, há grandes chances de um sistema ultra-justo 'espaguetado'. Por exemplo, numa arquitetura no qual um 'module-a controller' pode chamar um 'module-b service', não há limites claros de modularidade — cada alteração no código pode afetar qualquer outra coisa. Com esta abordagem, desenvolvedores que programam novos recursos têm dificuldade em reconhecer o escopo e impacto de suas alterações. Consequentemente, eles temem quebrar outros módulos, e cada deploy se torna mais lento e arriscado.
 
 🔗 [**Leia mais: estruture por componentes**](./sections/projectstructre/breakintcomponents.brazilian-portuguese.md)
 
 <br/><br/>
 
-## ![✔] 1.2 Coloque seus Componentes em Camadas, mantenha o Express dentro de seus limites
+## ![✔] 1.2 Estratifique seus componentes em três camadas, mantenha a camada web dentro de seus limites
 
-**TL;DR:** Cada componente deve conter 'layers' (camadas) - um objeto dedicado para web, lógica e código de acesso a dados. Isso não apenas faz uma separação clara dos interesses, como também facilita significativamente os mocks e testes de sistema. Embora este seja um padrão muito comum, desenvolvedores de API tendem a misturar camadas, passando os objetos da camada Web (req e res do Express) para a lógica de negócios e camadas de dados - isto torna sua aplicação dependente, e acessível apenas pelo Express.
+### `📝 #updated`
 
-**Caso contrário:** Uma aplicação que misture objetos WEB com outras camadas não podem ser acessadas por códigos de teste, CRON jobs e outras chamadas não oriundas do Express.
+**TL;DR:** Cada componente deve conter 'camadas' — uma pasta decidada para preocupações comuns: 'entry-point' onde o controlador vive, 'domain' onde a lógica vive, e 'data-access'. O princípio primário das arquiteturas mais populares é separar as preocupações técnicas (ex.: HTTP, DB, etc) da lógica pura da aplicação para que o desenvolvedor possa programar mais recursos sem se preocupar com as preocupações infraestruturais. Colocar cada preocupação em uma pasta dedicada, também conhecido como [padrão de camada tripla](https://pt.wikipedia.org/wiki/Arquitetura_multicamada), é a maneira _mais simples_ de atender a este objetivo.
+
+```bash
+my-system
+├─ apps (components)
+│  ├─ component-a
+   │  ├─ entry-points
+   │  │  ├─ api # o controlador fica aqui
+   │  │  ├─ message-queue # mensagens ao consumidor ficam aqui
+   │  ├─ domain # recursos e fluxos: DTO (Objeto de Transferência de Dados), serviços, lógica
+   │  ├─ data-access # chamadas ao banco de dados sem ORM
+```
+
+**Caso contrário:** É comum ver desenvolvedores passando objetos web como request/response para funções na camada de domínio/lógica - isso viola o princípio de separação e torna mais difícil acessar posteriormente o código de lógica por outros clientes como código de teste, jobs agendados, filas de mensagens, etc.
 
 🔗 [**Leia Mais: seu app em camadas**](./sections/projectstructre/createlayers.brazilian-portuguese.md)
 
 <br/><br/>
 
-## ![✔] 1.3 Envolva os utilitários comuns como pacotes npm
+## ![✔] 1.3 Envolva os utilitários comuns como pacotes npm, considere publicá-los
 
-**TL;DR:** Em uma grande aplicação, que constitui uma grande base de código, utilidades de características transversais tais como logger, encriptação e afins, devem ser envolvidos pelo seu próprio código e exposto como pacotes npm privados. Isso permite compartilhá-los entre várias bases de código e projetos.
+**TL;DR:** Coloque todos os módulos reutilizáveis em uma pasta dedicada, por exemplo, "libraries", e embaixo de cada módulo em sua própria pasta, por exemplo, "/libraries/logger". Faça do módulo um pacote independente com seu próprio arquivo `package.json` para aumentar a encapsulação do módulo e permitir a publicação futura em um repositório. Em uma configuração de Monorepo, os módulos podem ser consumidos por 'npm linking' para seus caminhos físicos, usando ts-paths ou publicando e instalando de um repositório de gerenciador de pacotes como o registro npm
 
-**Caso contrário:** Você deverá criar seu próprio ciclo de implantação e dependência.
+```bash
+my-system
+├─ apps (components)
+  │  ├─ component-a
+├─ libraries # (funcionalidade genérica entre componentes)
+│  ├─ logger
+│  │  ├─ package.json
+│  │  ├─ src
+│  │  │ ├─ index.js
 
-🔗 [**Leia Mais: estrutura por característica**](./sections/projectstructre/wraputilities.brazilian-portuguese.md)
+```
+
+**Caso contrário:** Os clientes de um módulo podem importar e se acoplar à funcionalidade interna de um módulo. Com um `package.json` na raíz, pode-se definir um `package.json.main` ou `package.json.exports` para explicitar quais arquivos e funções fazem parte da interface pública.
+
+🔗 [**Leia Mais: Estruture por recurso**](./sections/projectstructre/wraputilities.brazilian-portuguese.md)
 
 <br/><br/>
 
-## ![✔] 1.4 Separe 'app' e 'server' no Express
+## ![✔] 1.4 Use configurações hierárquicas, seguras e sensíveis aos seus ambientes
 
-**TL;DR:** Evite o péssimo hábito de definir todo a aplicação [Express](https://expressjs.com/) em um único arquivo enorme - separe a definição de seu 'Express' no mínimo em dois arquivos: a declaração da API (app.js) e as configurações de rede (WWW). Para uma estrutura ainda melhor, declare sua API dentro dos componentes.
+### `📝 #updated`
 
-**Caso contrário:** Sua API será acessível apenas para testes via chamadas HTTP (mais lentos e muito mais difíceis de gerar relatórios de cobertura). Provavelmente não será um grande prazer manter centenas de linhas de código em um único arquivo.
+**TL;DR:** Uma configuração de setup impecável deve garantir que (a) as chaves possam ser lidas a partir do arquivo E TAMBÉM da variáveis de ambiente (b) os segredos sejam mantidos fora do código consolidado (c) a configuração é hierárquica para facilitar a localização (d) suporte para tipagens (e) validação para falhar rapidamente (f) Especificar um padrão para cada chave. Existem alguns pacotes que podem auxiliar a marcar a maioria destes tópicos, como [convict](https://www.npmjs.com/package/convict), [env-var](https://github.com/evanshortiss/env-var), [zod](https://github.com/colinhacks/zod), entre outros.
 
-🔗 [**Leia Mais: separe 'app' e 'server' no Express**](./sections/projectstructre/separateexpress.brazilian-portuguese.md)
+**Caso contrário:** Considere uma variável de ambiente obrigatória que não foi fornecida. O aplicativo inicializa com sucesso e atende às solicitações, algumas informações já estão persistidas no banco de dados. Então, percebe-se que, sem essa chave obrigatória, a solicitação não pode ser concluída, deixando a aplicação em um estado sujo.
+
+🔗 [**Leia Mais: boas práticas de configuração**](./sections/projectstructre/configguide.brazilian-portuguese.md)
 
 <br/><br/>
 
-## ![✔] 1.5 Use configuração consciente, segura e hierárquica do ambiente
+## ![✔] 1.5 Considere todas as consequências ao escolher o framework principal
 
-**TL;DR:** Uma definição de configuração perfeita e impecável deve garantir que (a) as chaves possam ser lidas a partir do arquivo E TAMBÉM da variável de ambiente (b) os segredos sejam mantidos fora do código consolidado (c) a configuração é hierárquica para facilitar a localização. Existem alguns pacotes que podem auxiliar na checagem destes tópicos, como [rc](https://www.npmjs.com/package/rc), [nconf](https://www.npmjs.com/package/nconf), [config](https://www.npmjs.com/package/config) e [convict](https://www.npmjs.com/package/convict)
+### `🌟 #new`
 
-**Caso contrário:** Deixar de satisfazer qualquer um dos requisitos de configuração simplesmente atrapalhará a equipe de desenvolvimento ou devops. Provavelmente ambas.
+**TL;DR:** Ao construir aplicações e APIs, utilizar um framework é obrigatório. É fácil ignorar frameworks alternativos ou considerações importantes e, finalmente, acabar em uma opção sub-ótima. A partir de 2023/2024, acreditamos que estes quatro frameworks valem a pena considerar: [Nest.js](https://nestjs.com/), [Fastify](https://www.fastify.io/), [express](https://expressjs.com/), e [Koa](https://koajs.com/). Clique em "Leia Mais" abaixo para uma análise detalhada dos prós e contras de cada framework. Simplificando, acreditamos que Nest.js é a melhor opção para equipes que desejam ir para a OOP e/ou construir aplicações de grande escala que não podem ser particionadas em componentes menores e autônomos. Fastify é nossa recomendação para aplicações com componentes de tamanho razoável (ex.: Microsserviços) que são construídos em torno de mecânicas simples do Node.js. Leia nosso [guia completo de considerações aqui](./sections/projectstructre/choose-framework.brazilian-portuguese.md).
 
-🔗 [**Leia Mais: melhores práticas de configuração**](./sections/projectstructre/configguide.brazilian-portuguese.md)
+**Caso contrário:** Por causa da quantidade esmagadora de considerações, é fácil tomar decisões com base em informações parciais e comparar maçãs com laranjas. Por exemplo, acredita-se que o Fastify é um servidor web mínimo que deve ser comparado apenas com o express. Na realidade, é um framework rico com muitos plugins oficiais que cobrem diversas preocupações.
+
+🔗 [**Read More: Escolhendo o framework certo**](./sections/projectstructre/choose-framework.brazilian-portuguese.md)
+
+## ![✔] 1.6 Use TypeScript espaçadamente e conscientemente
+
+### `🌟 #new`
+
+**TL;DR:** Programar sem segurança de tipagem não é mais uma opção, TypeScript é a alternativa mais popular nesta missão. Use-o para definir variáveis e tipos de retorno de funções. Dito isso, também é uma espada de dois gumes que pode _encorajar_ a complexidade com suas ~ 50 palavras-chave adicionais e recursos sofisticados. Considere usá-lo com moderação, principalmente com tipagens simples, e utilize recursos avançados apenas quando surgir uma necessidade real.
+
+**Caso contrário:** [Pesquisas](https://earlbarr.com/publications/typestudy.pdf) apontam que o uso do TypeScript pode ajudar a detectar ~ 20% dos bugs mais cedo. Sem ele, a experiência do desenvolvedor no IDE também é intolerável. Por outro lado, 80% dos outros bugs não foram descobertos usando tipagens. Consequentemente, a sintaxe tipada é valiosa, mas limitada. Somente testes eficientes podem descobrir todo o espectro de bugs, incluindo bugs relacionados a tipagens. O TypeScrit também pode causar um efeito contrário: recursos de código sofisticados provavelmente aumentarão a complexidade do código, o que por si só aumenta tanto a quantidade de bugs, quanto o tempo médio de correção de bugs.
+
+🔗 [**Read More: Considerações relacionadas ao TypeScript**](./sections/projectstructre/typescript-considerations.brazilian-portuguese.md)
 
 <br/><br/><br/>
 
@@ -154,7 +366,7 @@ Leia em diferentes idiomas: [![CN](./assets/flags/CN.png)**CN**](./README.chines
 
 <br/><br/>
 
-## ![✔] 2.5 Documente erros de API usando o Swagger ou GraphQL
+## ![✔] 2.5 Documente erros de API usando a OpenAPI ou o GraphQL
 
 **TL;DR:** Permita que os clientes de sua API saibam quais erros podem ser retornados para que eles possam lidar com esses detalhes, sem causar falhas. Para RESTful APIs geralmente, isto é feito com frameworks de documentação REST API, como o Swagger. Se você está usando GraphQL, você também pode utilizar seu esquema e comentários.
 
@@ -164,7 +376,7 @@ Leia em diferentes idiomas: [![CN](./assets/flags/CN.png)**CN**](./README.chines
 
 <br/><br/>
 
-## ![✔] 2.6 Finalize o processo quando um estranho chegar
+## ![✔] 2.6 Finalize o processo quando um estranho aparecer
 
 **TL;DR:** Quando ocorre um erro desconhecido (um erro de programação, veja a melhor prática #3) - há incerteza sobre a integridade da aplicação. Uma prática comum sugere reiniciar cuidadosamente o processo utilizando uma ferramenta de “reinicialização” como [Forever](https://www.npmjs.com/package/forever) e [PM2](http://pm2.keymetrics.io/).
 
@@ -174,7 +386,7 @@ Leia em diferentes idiomas: [![CN](./assets/flags/CN.png)**CN**](./README.chines
 
 <br/><br/>
 
-## ![✔] 2.7 Use um agente de log maduro para aumentar a visibilidade de erros
+## ![✔] 2.7 Utilize um agente de log maduro para aumentar a visibilidade de erros
 
 **TL;DR:** Um conjunto de ferramentas de registro maduras como [Pino](https://www.npmjs.com/package/pino), [Winston](https://www.npmjs.com/package/winston), [Bunyan](https://www.npmjs.com/package/bunyan) ou [Log4js](https://www.npmjs.com/package/log4js), irão acelerar a descoberta e entendimento de erros. Portanto, esqueça o console.log.
 
@@ -184,7 +396,7 @@ Leia em diferentes idiomas: [![CN](./assets/flags/CN.png)**CN**](./README.chines
 
 <br/><br/>
 
-## ![✔] 2.8 Fluxos de testes de erros usando seu framework favorito
+## ![✔] 2.8 Teste os fluxos de erro com o seu framework de teste favorito
 
 **TL;DR:** Se o analista de QA ou o desenvolvedor de testes - Certifique-se de que seu código não atenda apenas o cenário positivo, mas também trate e retorne os erros corretos. Frameworks de teste como Mocha e Chai podem lidar com isso facilmente (veja exemplos de códigos no “Gist popup”)
 
@@ -250,7 +462,7 @@ especialmente se a causa do comportamento anormal estiver dentro da função aus
 
 <br/><br/>
 
-## ![✔] 3.2 Plugins Específicos do Node.js
+## ![✔] 3.2 Use as extensões de eslint do Node.js
 
 **TL;DR:** Além das regras padrões do ESLint que cobrem somente o Vanilla JS, adicione plug-ins específicos do Node, como o [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node), o [eslint-plugin-mocha](https://www.npmjs.com/package/eslint-plugin-mocha) e o [eslint-plugin-node-security](https://www.npmjs.com/package/eslint-plugin-security)
 
@@ -258,7 +470,7 @@ especialmente se a causa do comportamento anormal estiver dentro da função aus
 
 <br/><br/>
 
-## ![✔] 3.3 Comece um Bloco de Código com Chaves na Mesma Linha
+## ![✔] 3.3 Abra as chaves de um bloco de código na mesma linha
 
 **TL;DR:** As chaves que abrem um bloco de código devem estar na mesma linha da instrução de abertura
 
@@ -327,7 +539,7 @@ const count = 2 // tenta executar 2(), mas 2 não é uma função
 
 <br/><br/>
 
-## ![✔] 3.5 Nomeie Suas Funções
+## ![✔] 3.5 Nomeie suas funções
 
 **TL;DR:** Nomeie todas as funções, incluindo closures e callbacks. Evite funções anônimas. Isso é especialmente útil em uma aplicação node. Nomear todas a funções permitirá que você entenda facilmente o que está olhando quando verificar um snapshot da memória.
 
@@ -359,7 +571,7 @@ function doSomething() {}
 
 <br/><br/>
 
-## ![✔] 3.7 Prefira const do que let. Esqueça do var
+## ![✔] 3.7 Prefira const ao let. Esqueça o var
 
 **TL;DR:** Usar `const` significa que uma vez que a variável foi atribuída, ela não pode ser reatribuída. Preferir const irá te ajudar a não cair na tentação de utilizar a mesma variável para diferentes usos, e irá deixar seu código mais limpo. Se uma variável precisa ser reatribuída, em um for loop, por exemplo, use `let` para declarar. Outro aspecto importante do `let` é que esta variável só estará disponível no escopo de código em que ela foi definida. `var` tem escopo de função, não de bloco, e [não deveria ser utilizada em ES6](https://hackernoon.com/why-you-shouldnt-use-var-anymore-f109a58b9b70)
 , agora que você tem const e let ao seu dispor.
@@ -370,7 +582,7 @@ function doSomething() {}
 
 <br/><br/>
 
-## ![✔] 3.8 Requires vem primeiro e não dentro de funções
+## ![✔] 3.8 Importe módulos primeiro, não dentro de funções
 
 **TL;DR:** Faça o require de módulos no início de cada arquivo, antes e fora de qualquer função. Esta simples prática irá te ajudar não apenas a reconhecer as dependências de um determinado arquivo com facilidade e rapidez, como também evitará alguns possíveis problemas.
 
@@ -378,7 +590,7 @@ function doSomething() {}
 
 <br/><br/>
 
-## ![✔] 3.9 Faça Require nas pastas, não diretamente nos arquivos
+## ![✔] 3.9 Defina um ponto de entrada explícito para um módulo/pasta
 
 **TL;DR:** Ao desenvolver um módulo/biblioteca em uma pasta, coloque um arquivo index.js que exponha os componentes internos do módulo para que cada consumidor passe por ele. Isso serve como uma 'interface' para seu módulo e facilita futuras mudanças sem causar perdas.
 
@@ -398,7 +610,7 @@ module.exports.SMSNumberResolver = require("./SMSNumberResolver/SMSNumberResolve
 
 <br/><br/>
 
-## ![✔] 3.10 Use 0 operador `===`
+## ![✔] 3.10 Use o operador `===`
 
 **TL;DR:** Dê preferência em usar o operador de comparação estrita `===` ao invés do operador de comparação abstrata `==`, que é mais fraco. `==` irá comparar duas variáveis depois de convertê-las para o mesmo tipo. Não há conversão de tipo no `===` e ambas as variáveis devem ser do mesmo tipo para serem iguais.
 
@@ -435,7 +647,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 3.12 Use Fat (=>) Arrow Functions
+## ![✔] 3.12 Use expressões _arrow functions_ (=>)
 
 **TL;DR:** Embora seja recomendado usar async-await e evitar parâmetros de função ao lidar com APIs antigas, que aceitam promises ou callbacks - arrow functions tornam a estrutura do código mais compacta e mantém o contexto léxico da função raiz (por exemplo, 'this').
 
@@ -467,7 +679,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 4.3 Estutura de testes padrão AAA
+## ![✔] 4.3 Estuture testes a partir do padrão AAA
 
 **TL;DR:** Estruture seus testes com 3 seções bem separadas: Arrange, Act & Assert (AAA). A primeira parte inclui a configuração do teste, depois a execução do teste unitário, e finalmente, a fase de asserção. Seguir esta estrutura garante que o leitor não gaste nenhuma CPU cerebral para entender o plano de teste
 
@@ -485,7 +697,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 4.5 Evite dados fixos e sementes para teste, adicione os dados no teste
+## ![✔] 4.5 Evite dados fixos e seeds em testes, adicione dados a cada teste
 
 **TL;DR:** Para evitar o acoplamento de testes e facilitar o entendimento do fluxo do teste, cada teste deve adicionar e atuar em seu próprio conjunto de linhas de banco de dados. Sempre que um teste precisar extrair ou assumir a existência de alguns dados do banco de dados - ele deve incluir explicitamente esses dados e evitar a mutação de outros registros
 
@@ -511,7 +723,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 4.8 Verifique a cobertura de seu teste, isso te ajuda a identificar padrões incorretos de teste
+## ![✔] 4.8 Verifique suas coberturas de testes, isso te ajuda a identificar padrões incorretos de teste
 
 **TL;DR:** Ferramentas de cobertura de código como [Istanbul](https://github.com/istanbuljs/istanbuljs)/[NYC](https://github.com/istanbuljs/nyc), são ótimas por 3 motivos: elas são gratuitas (nenhum esforço é necessário para beneficiar esses relatórios), elas ajuda a identificar diminuição na cobertura de testes, e por último mas não menos importante, ela destacam a incompatibilidade de testes: olhando relatórios coloridos de cobertura de código, você pode notar, por exemplo, áreas de código que nunca são testadas como cláusulas catch (o que significa que os testes só invocam os caminhos felizes e não como o aplicativo se comporta em erros). Configure-o para falhas se a cobertura estiver abaixo de um certo limite.
 
@@ -567,7 +779,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <p align="right"><a href="#índice">⬆ Voltar ao topo</a></p>
 
-# `5. Boas Práticas de Produção`
+# `5. Práticas ao escalar para Produção`
 
 ## ![✔] 5.1. Monitoramento
 
@@ -639,7 +851,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 5.8. Descubra erros e tempo de inatividade usando produtos APM
+## ![✔] 5.8. Descubra o que está oculto usando produtos APM
 
 **TL;DR:** Produtos de monitoramento e desempenho (também conhecidos como APM) medem a base de código e a API de forma proativa para que possam ir “automagicamente” além do monitoramento tradicional e medir a experiência geral do usuário entre os serviços e camadas. Por exemplo, alguns APMs podem destacar uma transação que é carregada muito lentamente no lado do usuário final, sugerindo a causa raiz.
 
@@ -679,7 +891,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 5.12. Seja stateless, mate seus Servidores quase todos os dias
+## ![✔] 5.12. Aspire a ser stateless
 
 **TL;DR:** Armazene qualquer tipo de dados (por exemplo, sessões de usuário, cache, arquivos de upload) em armazenamentos externos. Considere ‘matar’ seus servidores periódicamente ou utilize plataformas ‘serverless’ (por exemplo, AWS Lambda) que forçam explicitamente um comportamento stateless.
 
@@ -699,7 +911,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 5.14. Atribua‘TransactionId’ para cada declaração de log
+## ![✔] 5.14. Atribua 'transaction-id's para cada declaração de log
 
 **TL;DR:** Atribua o mesmo identificador, transaction-id: {some value}, para cada entrada de log dentro de um mesmo request. Depois, ao inspecionar erros em logs, conclua facilmente o que aconteceu antes e depois. Infelizmente, isso não é fácil de se conseguir no Node, devido à sua natureza assíncrona. Veja exemplos de código.
 
@@ -759,7 +971,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <p align="right"><a href="#índice">⬆ Voltar ao topo</a></p>
 
-# `6. Boas Práticas em Segurança`
+# `6. Práticas de Seguraça`
 
 <div align="center">
 <img src="https://img.shields.io/badge/OWASP%20Threats-Top%2010-green.svg" alt="54 items"/>
@@ -789,7 +1001,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 6.3 Extraia segredos dos config files ou use pacotes para criptografá-los
+## ![✔] 6.3. Extraia segredos dos arquivos de configuração ou use pacotes para criptografá-los
 
 <a href="https://www.owasp.org/index.php/Top_10-2017_A6-Security_Misconfiguration" target="_blank"><img src="https://img.shields.io/badge/%E2%9C%94%20OWASP%20Threats%20-%20A6:Security%20Misconfiguration%20-green.svg" alt=""/></a> <a href="https://www.owasp.org/index.php/Top_10-2017_A3-Sensitive_Data_Exposure" target="_blank"><img src="https://img.shields.io/badge/%E2%9C%94%20OWASP%20Threats%20-%20A3:Sensitive%20Data%20Exposure%20-green.svg" alt=""/></a>
 
@@ -801,7 +1013,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 6.4. Impeça vulnerabilidades de query injection com bibliotecas ORM/ODM
+## ![✔] 6.4. Previna-se contra vulnerabilidades de query injection com bibliotecas ORM/ODM
 
 <a href="https://www.owasp.org/index.php/Top_10-2017_A1-Injection" target="_blank"><img src="https://img.shields.io/badge/%E2%9C%94%20OWASP%20Threats%20-%20A1:Injection%20-green.svg" alt=""/></a>
 
@@ -908,7 +1120,7 @@ Todas as declarações acima false se feitas com `===`.
 
 <br/><br/>
 
-## ![✔] 6.13. Rode o Node.js como um usuário que não seja root
+## ![✔] 6.13. Execute o Node.js como um usuário não-root
 
 <a href="https://www.owasp.org/index.php/Top_10-2017_A5-Broken_Access_Control" target="_blank"><img src="https://img.shields.io/badge/%E2%9C%94%20OWASP%20Threats%20-%20A5:Broken%20Access%20Access%20Control-green.svg" alt=""/></a>
 

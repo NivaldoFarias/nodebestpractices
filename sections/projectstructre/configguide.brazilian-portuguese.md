@@ -1,4 +1,4 @@
-# Use configuração consciente, segura e hierárquica do ambiente
+# Use configurações hierárquicas, seguras e sensíveis aos seus ambientes
 
 <br/><br/>
 
